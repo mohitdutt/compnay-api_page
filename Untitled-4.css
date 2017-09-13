@@ -1,0 +1,86 @@
+.container_1{
+    border: 1px solid grey;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 15px;
+}
+.div_1 {
+    margin-left: 10px;
+}
+.div_2 {
+    width:87% !important;
+}
+.div_3{
+    margin-top: 10px !important;
+}
+.div_4 {
+    margin-left: 10px;
+    
+}
+.div_5{
+    width:77%;
+}
+.div_6{
+    width:77%;
+}
+.input{
+    margin-left: 5px !important;
+}
+.div_7{
+    margin-left: 10px;
+    margin-top: 5px;
+}
+.div_8{
+    margin-top: 20px !important;
+}
+.div_9{
+    margin-left: 15px;
+}
+.div_10{
+    margin-left: 15px;
+    margin-top: 5px;
+}
+.div_11{
+    margin-left: 14px;
+    margin-top: 5px;
+}
+.div_x{
+    margin-left: 5px !important;
+}
+.div_y{
+    margin-left: 5px !important;
+    width:70% !important;
+}
+.div_z{
+    margin-left: 5px !important;
+    width:61% !important;
+}
+.div_21{
+    margin-top:20px;
+}
+.div_22{
+    margin-left: 15px;
+}
+.div_23{
+    width:47% !important;
+}
+.div_24{
+    margin-left: -4px !important;
+}
+/*
+.label {
+    margin-top: 5px;
+}
+*/
+.run_query{
+    margin-top: 15px !important;
+    margin-left: 100px !important;
+}
+.recaptche{
+     margin-top: 15px !important;
+    text-align: center !important;
+    margin-left: 8px;
+}

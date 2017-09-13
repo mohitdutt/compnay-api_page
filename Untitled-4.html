@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+
+<html ng-app='myApp'>
+
+    <head>
+        
+           <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
+        
+        <script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+        
+         <script src='https://www.google.com/recaptcha/api.js'></script>
+        
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel = "stylesheet" href ="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.css">
+        <script src = "https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.js"></script>
+     
+  <link rel="stylesheet" type="text/css" href="Untitled-4.css">
+        <script src="//code.angularjs.org/snapshot/angular.min.js"></script>
+    </head>
+
+<body ng-app='myApp'>
+<div class = "container-fluid container_1">
+            <br>
+              <form  class="ui form" name='myForm' action = "#" ng-controller = "myController" ng-submit = "submitForm($event)">
+                <div class = "row">
+                     <div class = "col-md-12 div_1">
+                     <div class="ui icon input div_2">
+                     <label for = "search">Add URL</label>
+                     <input class = "input" type="text" name = "text" placeholder="url" ng-model = "form.text">
+                     <i class="search icon"></i>
+                     </div>
+                    </div></div>
+                    
+                    <div class = "row div_3">
+                    <div class = "col-md-6 div_4">
+                     <div class="ui icon input div_5">
+                     <label for = "search">Compnay Name</label>
+                     <input class = "input" type="text" name = "search" placeholder="Compnay Name" ng-model = "form.search">
+                     <i class="search icon"></i>
+                     </div>
+                         </div>
+                    
+                     
+                     <div class = "col-md-5 div_7">
+                     <div class="ui icon input div_6">
+                     <label for = "search">Compnay Keyword</label>
+                     <input class = "input" type="text" name = "search_2" placeholder="Search Keyword" ng-model = "form.search_2">
+                     <i class="search icon"></i>
+                     </div>
+                    </div></div>
+
+    
+     <div class = "row div_8">
+    <div class = "col-md-4 div_9">
+        
+        <label>Employee Count</label>
+        <div class="ui floating dropdown labeled icon button div_x"  id = "dropdown_1">
+  <i class="filter icon"></i>
+  <span class="text">Employee Count</span>
+  <div class="menu">
+    <div class="ui icon search input">
+      <i class="search icon"></i>
+      <input type="text" placeholder="count">
+    </div>
+    <div class="divider"></div>
+    <div class="header">
+      <i class="tags icon"></i>
+      Any Category
+    </div>
+    <div class="scrolling menu">
+      <div class="item">
+        <div class="ui red empty circular label"></div>
+        Important
+      </div>
+      </div></div></div>
+        </div>
+        
+        <div class = "col-md-3 div_10">
+         <label for = "">Location</label>
+              <input class = "div_y" type="text" name = "location" placeholder="Type Location" ng-model = "form.location">
+        </div>
+        <div class = "col-md-4 div_11">
+        
+              <label for = "">Tech-Stack</label>
+              <input class = "div_z" type="text" name = "tech_stack" placeholder="Keyword" ng-model = "form.tech_stack">
+            
+        </div>
+    </div>
+    
+                 <div class = "row div_21">
+    <div class = "col-md-4">
+            
+             <label for = "" class = "div_22">Facebook Range</label>
+        
+            <div class="ui input corner labeled">
+           <input placeholder="Min" type="number" name = "number_0" class = "div_23" ng-model = "form.number_0">
+                
+            <div class="ui input corner labeled">
+           <input placeholder="Max" type="number" name = "number_1" class = "div_24" ng-model = "form.number_1">
+            </div>
+                 
+            </div>
+            
+        </div>
+      <div class = "col-md-4">
+            
+             <label for = "" class = "div_22">Twitter Range</label>
+        
+            <div class="ui input corner labeled">
+           <input placeholder="Min" type="number" class = "div_23" name = "number_2" ng-model = "form.number_2">
+                
+            <div class="ui input corner labeled">
+           <input placeholder="Max" type="number" name = "number_3" class = "div_24" ng-model = "form.number_3">
+            </div>
+                 
+            </div>
+            
+        </div>
+                        <div class = "col-md-4">
+            
+             <label for = "" class = "div_22">Alexa Range</label>
+        
+            <div class="ui input corner labeled">
+           <input placeholder="Min" type="number" name = "number_4" class = "div_23" ng-model = "form.number_4">
+                
+            <div class="ui input corner labeled">
+           <input placeholder="Max" type="number" name = "number_5" class = "div_24" ng-model = "form.number_5">
+            </div>
+                 
+            </div>
+            
+        </div>
+    
+    </div>  
+               
+                  
+         <div class="ui divider divider"></div>
+           <div class = "row">
+            <div class = "col-md-9">
+                    <div class="g-recaptcha recaptche" data-sitekey="6Lf1mS4UAAAAAKtkPhVril2N7ME97FEMrvGSuGBG"></div>
+            </div></div>
+            <div class = "row">
+            <div class = "col-md-3">
+         
+<input class="ui button run_query" type="submit" tabindex="0" id = "button">
+  
+
+                </div></div>
+    </form>
+    
+    </div>
+    
+    <script>
+      $("#dropdown_1").click(function(){
+        $('#dropdown_1').dropdown(); 
+    });
+        
+                     
+                   
+         var app = angular.module("myApp", [])
+            .controller("myController" , [ "$scope" ,"$http", function($scope ,$http){ 
+                   
+                
+                 var formData = {
+        text: "default",
+        search: "default",
+        entities: "default",
+        number_0: "default",
+        number_1: "default",
+        number_2: "default",
+        number_3: "default",
+        number_4: "default",
+        number_5: "default",
+        tech_stack: "default",
+        location: "default",
+        search_2: "default"
+    };
+                $scope.save = function(){
+                    formData = $scope.form;
+                    console.log(formData);
+                };
+                 $scope.submitForm = function($event) {
+                      $event.preventDefault()
+        console.log("posting data....");
+        formData = $scope.form;
+        console.log(formData);
+                     alert(0)
+                 };
+                console.log($scope.form);
+            }]);
+        
+    </script>
+    
+    
+    
+    </body></html>
